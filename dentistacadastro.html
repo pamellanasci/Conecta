@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Conecta</title>
+</head>
+<body>
+    <header class="centro">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logotipo Conecta">  
+            </a>
+        </div>    
+
+
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="quemsomos.html" >Quem Somos</a></li>
+            <li><a href="contato.html" >Contato</a></li>
+            <li><a href="faq.html" >FAQ</a></li>
+            </ul>
+
+          </nav>
+    </header>
+
+    <main>
+        <section class="banner banner1">
+
+                <div class="conteudo-banner">
+                    <h1>Sua dedicação pode transformar vidas,a o se cadastrar na Conecta, você se torna parte de uma rede que une empatia, tecnologia e impacto social, ajudando a levar saúde bucal e dignidade a quem mais precisa. Preencha o formulário abaixo e junte-se à corrente de profissionais que fazem o bem acontecer, um sorriso de cada vez.</h1>
+                </div>
+        </section>
+
+        <section id="contato">
+            <div class="ideias">
+                <div class="conteudo">
+                <h3 class="titulo">Cadastro de Dentista Voluntário</h3>
+
+                <div class="instrucoes-form">
+                    <h4>Instruções</h4>
+                    <ul>
+                        <li>O cadastro é exclusivo para Dentistas que desejam atuar como voluntários em parceria com a Turma do Bem.</li>
+                        <li>As informações preenchidas serão utilizadas apenas para fins de registro, contato e correspondência com a ONG.</li>
+                        <li>Todos os dados estão protegidos conforme a Lei Geral de Proteção de Dados (LGPD).</li>
+                        <li>Ao finalizar o cadastro, você receberá um e-mail de confirmação e orientações sobre os próximos passos.</li>
+                    </ul>
+                </div>
+
+
+                    <form name="frmContato" method="post" class="form-contato">
+
+                    <h3>Dados Pessoais</h3>
+
+                    <label for="txtNome">Nome completo</label>
+                    <input type="text" name="txtNome" id="txtNome" placeholder="Como podemos te chamar?" required>
+
+                    <label for="txtDataNascimento">Data de Nascimento</label>
+                    <input type="date" name="txtDataNascimento" id="txtDataNascimento" required>
+
+                    <label for="txtCpf">CPF</label>
+                    <input type="text" name="txtCpf" id="txtCpf" placeholder="000.000.000-00" required>
+
+                    <label for="txtRg">RG</label>
+                    <input type="text" name="txtRg" id="txtRg" placeholder="Digite seu RG" required>
+
+                    <label for="txtCnpj">CNPJ</label>
+                    <input type="text" name="txtCnpj" id="txtCnpj" placeholder="Digite o CNPJ (opcional)">
+
+                    <label for="txtEmail">E-mail</label>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Usaremos este e-mail para contato." required>
+
+                    <label for="txtCelular">Celular</label>
+                    <input type="tel" name="txtCelular" id="txtCelular" placeholder="(00) 00000-0000" required>
+
+                    <label for="txtInstagram">Instagram</label>
+                    <input type="text" name="txtInstagram" id="txtInstagram" placeholder="@usuario (opcional)">
+
+                    <h3>Endereço Residencial</h3>
+
+                    <label for="txtEndereco">Endereço</label>
+                    <input type="text" name="txtEndereco" id="txtEndereco" required>
+
+                    <label for="txtNumero">Número</label>
+                    <input type="text" name="txtNumero" id="txtNumero" required>
+
+                    <label for="txtComplemento">Complemento</label>
+                    <input type="text" name="txtComplemento" id="txtComplemento">
+
+                    <label for="txtBairro">Bairro</label>
+                    <input type="text" name="txtBairro" id="txtBairro" required>
+
+                    <label for="txtCidade">Cidade</label>
+                    <input type="text" name="txtCidade" id="txtCidade" required>
+
+                    <label for="txtEstado">Estado</label>
+                    <input type="text" name="txtEstado" id="txtEstado" required>
+
+                    <label for="txtCep">CEP</label>
+                    <input type="text" name="txtCep" id="txtCep" placeholder="00000-000" required>
+
+                    <h3>Endereço do Consultório</h3>
+
+                    <label for="txtEnderecoComercial">Endereço</label>
+                    <input type="text" name="txtEnderecoComercial" id="txtEnderecoComercial" required>
+
+                    <label for="txtNumeroComercial">Número</label>
+                    <input type="text" name="txtNumeroComercial" id="txtNumeroComercial" required>
+
+                    <label for="txtBairroComercial">Bairro</label>
+                    <input type="text" name="txtBairroComercial" id="txtBairroComercial" required>
+
+                    <label for="txtCidadeComercial">Cidade</label>
+                    <input type="text" name="txtCidadeComercial" id="txtCidadeComercial" required>
+
+                    <label for="txtEstadoComercial">Estado</label>
+                    <input type="text" name="txtEstadoComercial" id="txtEstadoComercial" required>
+
+                    <label for="txtCepComercial">CEP</label>
+                    <input type="text" name="txtCepComercial" id="txtCepComercial" placeholder="00000-000" required>
+
+                    <label for="txtTelefoneComercial">Telefone Comercial</label>
+                    <input type="tel" name="txtTelefoneComercial" id="txtTelefoneComercial" placeholder="(00) 0000-0000" required>
+
+                    <label for="txtIndicacao">Foi indicado por alguém? Se sim, quem?</label>
+                    <input type="text" name="txtIndicacao" id="txtIndicacao">
+
+                    <h3>Dados Profissionais</h3>
+
+                    <label for="txtCro">CRO</label>
+                    <input type="text" name="txtCro" id="txtCro" required>
+
+                    <label for="txtEspecialidade">Especialidade(s)</label>
+                    <input type="text" name="txtEspecialidade" id="txtEspecialidade" required>
+
+                    <h3>Autorização e Consentimento</h3>
+
+                    <p><strong>Autorização ao Uso de Dados Pessoais</strong><br>
+                    Nos termos da Lei Geral de Proteção de Dados Pessoais (LGPD), autorizo a Turma do Bem a usar as informações fornecidas neste formulário exclusivamente para fins institucionais e de voluntariado.</p>
+
+                    <label><input type="checkbox" required> Concordo e estou ciente</label>
+
+                    <p><strong>Termo de Consentimento</strong><br>
+                    Autorizo a Turma do Bem a armazenar e utilizar meus dados conforme descrito na Lei nº 13.709, de 14 de agosto de 2018, garantindo confidencialidade e segurança das informações.</p>
+
+                    <label><input type="checkbox" required> Estou de acordo</label>
+
+                    <button type="submit" class="bnt">Enviar</button>
+                    <p id="mensagemRetorno" class="mensagem-sucesso" aria-live="polite"></p>
+                    </form>
+
+
+                </form>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="footer container-margens">
+            <div class="redes-sociais">
+                <a href="https://gist.github.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/github.png" alt="ícone github">  
+                </a>
+        
+                <a href="https://www.linkedin.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/in.png" alt="ícone Linkedin">
+                </a>
+        
+                <a href="https://www.instagram.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/instagram.png" alt="ícone instagran" >
+                </a>  
+               
+            </div>
+        
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">Conectando Sorrisos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

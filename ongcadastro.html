@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Conecta</title>
+</head>
+<body>
+    <header class="centro">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logotipo Conecta">  
+            </a>
+        </div>    
+
+
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="quemsomos.html" >Quem Somos</a></li>
+            <li><a href="contato.html" >Contato</a></li>
+            <li><a href="faq.html" >FAQ</a></li>
+            </ul>
+
+          </nav>
+    </header>
+
+    <main>
+        <section class="banner banner1">
+
+                <div class="conteudo-banner">
+                    <h1>Acreditamos que conexões transformam o mundo, se sua organização compartilha o propósito de promover impacto social e transformar vidas através do cuidado e da empatia, a Conecta é o espaço ideal para essa parceria. Cadastre sua ONG e faça parte da rede que une tecnologia e solidariedade para ampliar o alcance de projetos que fazem a diferença.</h1>
+                </div>
+        </section>
+
+        <section id="contato">
+            <div class="ideias">
+                <div class="conteudo">
+                <h3 class="titulo">Cadastro de Organização Parceira</h3>
+
+                <div class="instrucoes-form">
+                    <h4>Instruções</h4>
+                    <ul>
+                        <li>Este formulário é destinado a organizações sem fins lucrativos que desejam integrar a rede de impacto da Conecta.</li>
+                        <li>As informações preenchidas serão utilizadas para validar a parceria e estruturar o acesso à plataforma.</li>
+                        <li>Após o envio, a equipe da Conecta entrará em contato para confirmar os dados e apresentar os próximos passos da integração.</li>
+                        <li>Todos os dados estão protegidos conforme a Lei Geral de Proteção de Dados (LGPD).</li>
+                    </ul>
+                </div>
+
+        <form name="frmOng" method="post" class="form-contato">
+
+            <h3>Informações da Instituição</h3>
+
+            <label for="nomeOng">Nome da ONG</label>
+            <input type="text" id="nomeOng" name="nomeOng" placeholder="Digite o nome completo da instituição" required>
+
+            <label for="cnpjOng">CNPJ</label>
+            <input type="text" id="cnpjOng" name="cnpjOng" placeholder="00.000.000/0000-00" required>
+
+            <label for="emailOng">E-mail Institucional</label>
+            <input type="email" id="emailOng" name="emailOng" placeholder="contato@exemplo.org" required>
+
+            <label for="telefoneOng">Telefone de Contato</label>
+            <input type="tel" id="telefoneOng" name="telefoneOng" placeholder="(00) 00000-0000" required>
+
+            <label for="siteOng">Site ou Rede Social</label>
+            <input type="text" id="siteOng" name="siteOng" placeholder="https://www.exemplo.org">
+
+            <h3>Endereço</h3>
+
+            <label for="enderecoOng">Endereço</label>
+            <input type="text" id="enderecoOng" name="enderecoOng" required>
+
+            <label for="numeroOng">Número</label>
+            <input type="text" id="numeroOng" name="numeroOng" required>
+
+            <label for="bairroOng">Bairro</label>
+            <input type="text" id="bairroOng" name="bairroOng" required>
+
+            <label for="cidadeOng">Cidade</label>
+            <input type="text" id="cidadeOng" name="cidadeOng" required>
+
+            <label for="estadoOng">Estado</label>
+            <input type="text" id="estadoOng" name="estadoOng" required>
+
+            <label for="cepOng">CEP</label>
+            <input type="text" id="cepOng" name="cepOng" placeholder="00000-000" required>
+
+            <h3>Responsável pelo Cadastro</h3>
+
+            <label for="nomeResponsavel">Nome Completo</label>
+            <input type="text" id="nomeResponsavel" name="nomeResponsavel" required>
+
+            <label for="cargoResponsavel">Cargo ou Função</label>
+            <input type="text" id="cargoResponsavel" name="cargoResponsavel" required>
+
+            <label for="emailResponsavel">E-mail do Responsável</label>
+            <input type="email" id="emailResponsavel" name="emailResponsavel" required>
+
+            <label for="telefoneResponsavel">Telefone</label>
+            <input type="tel" id="telefoneResponsavel" name="telefoneResponsavel" placeholder="(00) 00000-0000" required>
+
+            <h3>Termo de Consentimento</h3>
+
+            <p>Autorizo a Conecta a utilizar as informações fornecidas neste formulário para fins de parceria, comunicação e divulgação institucional, respeitando a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+
+            <label><input type="checkbox" required> Estou de acordo com o termo de consentimento.</label>
+
+            <button type="submit" class="bnt">Enviar Cadastro</button>
+            <p id="mensagemRetorno" class="mensagem-sucesso" aria-live="polite"></p>
+
+        </form>
+
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="footer container-margens">
+            <div class="redes-sociais">
+                <a href="https://gist.github.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/github.png" alt="ícone github">  
+                </a>
+        
+                <a href="https://www.linkedin.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/in.png" alt="ícone Linkedin">
+                </a>
+        
+                <a href="https://www.instagram.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/instagram.png" alt="ícone instagran" >
+                </a>  
+               
+            </div>
+        
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">Conectando Sorrisos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

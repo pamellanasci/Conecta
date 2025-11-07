@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Login | Conecta</title>
+</head>
+<body>
+  <header class="centro">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logotipo Conecta">  
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner banner1">
+      <div class="conteudo-banner">
+        <h1>Bem-vindo à Conecta</h1>
+        <p class="texto-branco">Faça login para acessar sua área e continuar conectando sorrisos.</p>
+      </div>
+    </section>
+
+    <section id="login">
+      <div class="ideias">
+        <div class="conteudo">
+          <h3 class="titulo">Acesse sua conta</h3>
+
+        <form id="formLogin" class="form-contato">
+            <label for="tipoLogin">Tipo de Login</label>
+            <select id="tipoLogin" name="tipoLogin" required>
+                <option value="">Selecione</option>
+                <option value="dentista">Dentista Voluntário</option>
+                <option value="ong">ONG</option>
+            </select>
+
+            <label for="emailLogin">E-mail</label>
+            <input type="email" id="emailLogin" name="emailLogin" placeholder="Digite seu e-mail" required>
+
+            <label for="senhaLogin">Senha</label>
+            <input type="password" id="senhaLogin" name="senhaLogin" placeholder="Digite sua senha" required>
+
+            <button type="submit" class="bnt">Entrar</button>
+            <p id="msgLogin" class="mensagem-sucesso" aria-live="polite"></p>
+         </form>
+
+          <p style="margin-top: 20px;">Ainda não tem uma conta?
+            <a href="dentistacadastro.html" style="color:#FF6600; font-weight:600;">Cadastre-se aqui</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer container-margens">
+      <div class="redes-sociais">
+        <a href="https://gist.github.com" target="_blank" class="redes-sociais__link">
+          <img src="img/github.png" alt="ícone github">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="redes-sociais__link">
+          <img src="img/in.png" alt="ícone Linkedin">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="redes-sociais__link">
+          <img src="img/instagram.png" alt="ícone Instagram">
+        </a>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Conectando Sorrisos</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

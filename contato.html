@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Conecta</title>
+</head>
+<body>
+    <header class="centro">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logotipo Conecta">  
+            </a>
+        </div>    
+
+
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="quemsomos.html" >Quem Somos</a></li>
+            <li><a href="contato.html" >Contato</a></li>
+            <li><a href="faq.html" >FAQ</a></li>
+            </ul>
+
+          </nav>
+    </header>
+
+    <main>
+        <section class="banner banner1">
+
+                <div class="conteudo-banner">
+                    <h1>Estamos aqui para ouvir você, seja para tirar dúvidas, compartilhar ideias, oferecer ajuda ou buscar apoio, nossa equipe está pronta para acolher sua mensagem.</h1>
+                </div>
+        </section>
+
+        <section id="contato">
+            <div class="ideias">
+                <div class="conteudo">
+                <h3 class="titulo">Entre em Contato</h3>
+
+                <form name="frmContato" method="post" class="form-contato">
+
+                    <label for="txtNome">Nome completo</label>
+                    <input type="text" name="txtNome" id="txtNome" placeholder="Como podemos te chamar?" required>
+
+                    <label for="txtEmail">E-mail</label>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Usaremos este e-mail para responder sua mensagem." required>
+
+                    <label for="txtAssunto">Assunto</label>
+                    <input type="text" name="txtAssunto" id="txtAssunto" placeholder="Exemplo: Parcerias, Dúvidas, Voluntariado, Sugestões" required>
+
+                    <label for="txtMensagem">Mensagem</label>
+                    <textarea name="txtMensagem" id="txtMensagem" rows="6" placeholder="Conte pra gente como podemos ajudar." required></textarea>
+
+                    <button type="submit" class="bnt">Enviar mensagem</button>
+                    <p id="mensagemRetorno" class="mensagem-sucesso" aria-live="polite"></p>
+
+                </form>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="footer container-margens">
+            <div class="redes-sociais">
+                <a href="https://gist.github.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/github.png" alt="ícone github">  
+                </a>
+        
+                <a href="https://www.linkedin.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/in.png" alt="ícone Linkedin">
+                </a>
+        
+                <a href="https://www.instagram.com" target="_blank" class="redes-sociais__link">
+                    <img src="img/instagram.png" alt="ícone instagran" >
+                </a>  
+               
+            </div>
+        
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">Conectando Sorrisos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>

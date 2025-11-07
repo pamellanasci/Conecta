@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel ONG | Conecta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="banner banner1 banner-painel-ong">
+    <button class="hamburger" id="btnMenu" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav class="menu-lateral" id="menuLateral" aria-label="Menu do painel da ONG">
+      <ul>
+        <li><a href="#topoPainel" class="link-menu">Início</a></li>
+        <li><a href="#sec-pacientes" class="link-menu">Pacientes</a></li>
+        <li><a href="#sec-dentistas" class="link-menu">Dentistas Parceiros</a></li>
+        <li><a href="#sec-doacoes" class="link-menu">Doações</a></li>
+        <li><button id="btnSair" class="link-sair">Sair</button></li>
+      </ul>
+    </nav>
+
+    <div class="logo-banner">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logotipo Conecta">
+      </a>
+    </div>
+
+    <div class="conteudo-banner" id="topoPainel">
+      <h1>Bem-vindo(a), <span id="nomeOng">ONG Conecta</span></h1>
+      <p class="texto-branco">
+        Aqui você gerencia pacientes, dentistas parceiros, doações e acompanha o impacto gerado pela sua rede.
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="alertas" class="bloco painel-bloco">
+      <div class="conteudo">
+        <h2 class="titulo titulo-painel">Alertas</h2>
+        <p class="descricao-secundaria">
+          Acompanhe casos prioritários, vencimento de prazos e situações que exigem atenção imediata.
+        </p>
+
+        <div class="alertas-box">
+          <div class="alerta-item alerta-urgente">
+            <span class="alerta-label">Alta prioridade</span>
+            <p><strong>#2025-001</strong> | Prazo de retorno próximo · Paciente: Maria S. · Profissional: Dr. João</p>
+          </div>
+
+          <div class="alerta-item">
+            <span class="alerta-label">Atenção</span>
+            <p><strong>#2025-002</strong> | Triagem pendente · Paciente: Lucas R. · Aguardando match</p>
+          </div>
+
+          <div class="alerta-item">
+            <span class="alerta-label">Atenção</span>
+            <p><strong>#2025-003</strong> | Revisão de prontuário · Paciente: Ana P. · Profissional: Dra. Carla</p>
+          </div>
+
+          <button class="bnt ver-todos-alertas">Ver todos os alertas</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="match" class="bloco painel-bloco">
+      <div class="conteudo">
+        <h2 class="titulo titulo-painel">Match Inteligente de Profissionais</h2>
+        <p class="descricao-secundaria">
+          Encontre o dentista ideal para cada caso com base em localização, tipo de tratamento e marcadores sociais.
+        </p>
+
+        <form id="formMatch" class="filtros-match">
+          <div class="campo">
+            <label for="localizacao">Localização</label>
+            <input type="text" id="localizacao" name="localizacao" placeholder="Cidade, estado ou CEP">
+          </div>
+
+          <div class="campo">
+            <label for="tratamento">Tipo de tratamento</label>
+            <select id="tratamento" name="tratamento">
+              <option value="">Todos</option>
+              <option value="preventivo">Preventivo</option>
+              <option value="restaurador">Restaurador</option>
+              <option value="endodontia">Endodontia</option>
+              <option value="cirurgico">Cirúrgico</option>
+              <option value="ortodontia">Ortodontia</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="genero">Gênero do profissional</label>
+            <select id="genero" name="genero">
+              <option value="">Indiferente</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+              <option value="nao-binario">Não binário</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="etnia">Marcador étnico</label>
+            <select id="etnia" name="etnia">
+              <option value="">Indiferente</option>
+              <option value="preta">Profissional preto(a)</option>
+              <option value="parda">Profissional pardo(a)</option>
+              <option value="indigena">Profissional indígena</option>
+              <option value="outros">Outros grupos sub-representados</option>
+            </select>
+          </div>
+
+          <button type="submit" class="bnt">Buscar profissional</button>
+        </form>
+
+        <div id="resultadoMatch" class="cards-profissionais">
+          <div class="card-profissional">
+            <div class="avatar"></div>
+            <div class="info">
+              <h3>Dra. Ana Souza</h3>
+              <p>Especialidade: Odontopediatria</p>
+              <p>Localização: São Paulo - SP</p>
+              <p>Atende casos: crianças, marcadores de gênero e raça sensíveis.</p>
+              <button class="btn-ver-perfil">Ver perfil</button>
+            </div>
+          </div>
+
+          <div class="card-profissional">
+            <div class="avatar"></div>
+            <div class="info">
+              <h3>Dr. Marcos Lima</h3>
+              <p>Especialidade: Cirurgia Oral</p>
+              <p>Localização: Recife - PE</p>
+              <p>Foco em pacientes vítimas de violência.</p>
+              <button class="btn-ver-perfil">Ver perfil</button>
+            </div>
+          </div>
+
+          <div class="card-profissional">
+            <div class="avatar"></div>
+            <div class="info">
+              <h3>Dra. Júlia Costa</h3>
+              <p>Especialidade: Clínica Geral</p>
+              <p>Localização: Curitiba - PR</p>
+              <p>Match indicado para casos urgentes e acompanhamento contínuo.</p>
+              <button class="btn-ver-perfil">Ver perfil</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="sec-pacientes"></div>
+        <div id="sec-dentistas"></div>
+        <div id="sec-doacoes"></div>
+      </div>
+    </section>
+
+    <section id="relatorios" class="bloco painel-bloco">
+      <div class="conteudo">
+        <h2 class="titulo titulo-painel">Relatórios e Métricas</h2>
+        <p class="descricao-secundaria">
+          Acompanhe o impacto gerado pela sua rede: atendimentos, profissionais ativos, cidades atendidas e muito mais.
+        </p>
+
+        <div class="relatorios-grid">
+          <div class="card-relatorio">
+            <h3>Atendimentos realizados</h3>
+            <p class="numero">+500</p>
+            <p>pacientes beneficiados pela rede Conecta.</p>
+          </div>
+
+          <div class="card-relatorio">
+            <h3>Dentistas voluntários</h3>
+            <p class="numero">+200</p>
+            <p>profissionais cadastrados e ativos.</p>
+          </div>
+
+          <div class="card-relatorio">
+            <h3>Cidades atendidas</h3>
+            <p class="numero">+50</p>
+            <p>ampliando o alcance da Turma do Bem.</p>
+          </div>
+
+          <div class="card-relatorio">
+            <h3>Doações monitoradas</h3>
+            <p class="numero">Em breve</p>
+            <p>integração financeira transparente no painel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer container-margens">
+      <div class="redes-sociais">
+        <a href="#" class="redes-sociais__link">
+          <img src="img/github.png" alt="GitHub Conecta">
+        </a>
+        <a href="#" class="redes-sociais__link">
+          <img src="img/in.png" alt="LinkedIn Conecta">
+        </a>
+        <a href="#" class="redes-sociais__link">
+          <img src="img/instagram.png" alt="Instagram Conecta">
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Conectando Sorrisos</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
