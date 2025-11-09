@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt" dir="ltr">
+<html lang="pt-br" dir="ltr">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Conecta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-xs.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="css/style-sm.css" media="(min-width: 600px) and (max-width: 767.98px)">
+    <link rel="stylesheet" href="css/style-md.css" media="(min-width: 768px) and (max-width: 991.98px)">
+    <link rel="stylesheet" href="css/style-lg.css" media="(min-width: 992px) and (max-width: 1299.98px)">
+    <link rel="stylesheet" href="css/style-xl.css" media="(min-width: 1300px)">
+
+    <title>Quem Somos | Conecta</title>
 </head>
 <body>
     <header class="centro">
@@ -12,7 +19,11 @@
             <a href="index.html">
                 <img src="img/logo.png" alt="Logotipo Conecta">  
             </a>
-        </div>    
+        </div> 
+        
+        <button class="hamburger-main" id="hamburgerMain" aria-label="Abrir menu">
+        ☰
+        </button>
 
         <nav>
             <ul>
@@ -64,7 +75,7 @@
                 <a href="https://github.com/marianatcmalvao" target="_blank" class="icone">
                     <img src="img/github.png" alt="ícone github">
                 </a>
-                <a href="www.linkedin.com/in/mariana-malvão-871ab8198" target="_blank" class="icone">
+                <a href="https://www.linkedin.com/in/mariana-malv%C3%A3o-871ab8198/" target="_blank" class="icone">
                     <img src="img/in.png" alt="ícone Linkedin">
                 </a>
                 </div>
@@ -114,6 +125,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
