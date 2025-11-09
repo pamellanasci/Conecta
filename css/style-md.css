@@ -1,0 +1,32 @@
+/* MEDIUM - Tablets */
+header {
+  height: 90px;
+}
+
+.banner {
+  margin-top: 90px;
+  padding: 100px 40px;
+}
+
+.ideias {
+  margin: 30px 40px;
+}
+
+.grid {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px;
+}
+
+.mini-bio {
+  flex-direction: row;
+  max-width: 90%;
+  padding: 30px;
+}
+
+.filtros-match {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-profissionais {
+  grid-template-columns: repeat(3, 1fr);
+}

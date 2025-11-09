@@ -1,0 +1,36 @@
+/* SMALL - Celulares maiores / tablets verticais */
+header {
+  height: 80px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.banner {
+  margin-top: 80px;
+  padding: 80px 24px;
+}
+
+.ideias {
+  margin: 24px;
+  padding: 24px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+  margin: 24px;
+}
+
+.mini-bio {
+  max-width: 90%;
+  margin: 24px auto;
+}
+
+.filtros-match {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cards-profissionais {
+  grid-template-columns: repeat(2, 1fr);
+}
