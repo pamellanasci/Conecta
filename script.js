@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // LOGIN (ONG / DENTISTA)
   const formLogin = document.getElementById("formLogin");
-
   if (formLogin) {
     formLogin.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -54,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // salva nome para usar no painel
       const nomeExibicao = email.split("@")[0];
       localStorage.setItem("nomeUsuario", nomeExibicao);
       localStorage.setItem("tipoUsuario", tipo);
@@ -67,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // PAINEL ONG
+  // PAINEL ONG - menu lateral
   const spanNome = document.getElementById("nomeOng");
   if (spanNome) {
     const nome = localStorage.getItem("nomeUsuario");
@@ -114,26 +112,39 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Filtros aplicados! (Simulação) Em uma versão real, o sistema exibiria os profissionais compatíveis.");
     });
   }
-});
 
+  // FAQ - Abrir/Fechar Respostas
+  const perguntas = document.querySelectorAll(".faq-pergunta");
+  if (perguntas.length > 0) {
+    perguntas.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const resposta = btn.nextElementSibling;
+        const seta = btn.querySelector(".seta");
 
-// FAQ - Abrir/Fechar Respostas
-const perguntas = document.querySelectorAll(".faq-pergunta");
-
-if (perguntas.length > 0) {
-  perguntas.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const resposta = btn.nextElementSibling;
-      const seta = btn.querySelector(".seta");
-
-      // Alterna exibição
-      if (resposta.style.display === "block") {
-        resposta.style.display = "none";
-        seta.textContent = "+";
-      } else {
-        resposta.style.display = "block";
-        seta.textContent = "–";
-      }
+        if (resposta.style.display === "block") {
+          resposta.style.display = "none";
+          seta.textContent = "+";
+        } else {
+          resposta.style.display = "block";
+          seta.textContent = "–";
+        }
+      });
     });
-  });
-}
+  }
+
+  // ===== MENU PRINCIPAL - HAMBÚRGUER MOBILE =====
+  const hamburgerMain = document.getElementById("hamburgerMain");
+  const navMainList = document.querySelector("header nav ul");
+
+  if (hamburgerMain && navMainList) {
+    hamburgerMain.addEventListener("click", () => {
+      navMainList.classList.toggle("aberto");
+    });
+
+    navMainList.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMainList.classList.remove("aberto");
+      });
+    });
+  }
+});
